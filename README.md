@@ -31,7 +31,7 @@
     			}
     			```
 
-    		함수표현식에서 이름을 붙여주는 것의 장점은 stack trace에서 함수 이름을 보고 디버깅 할 수 있다는 것
+    		함수표현식에서 이름을 붙여주는 것의 장점은 stack trace에서 함수 이름을 보고 디버깅 할 수 있다는 것  
 
     		* IIFE 즉시 실행 함수 표현식
     			```
@@ -40,8 +40,8 @@
     			})();
     			```
     		
-    	- 화살표함수 (Arrow Function Expression =>)
-    		함수표현식의 더 짧은 버전, 모든 상황에 적용되진 못함
+    	- 화살표함수 (Arrow Function Expression =>)  
+    		함수표현식의 더 짧은 버전, 모든 상황에 적용되진 못함  
 			- [x] this나 super에 대한 바인딩 없음, 메소드로 사용X
 			- [x] 생성자로 사용할 수 없음    
 
@@ -65,13 +65,13 @@
     		a => a + 100;
 
     		```
-		- generator function 
+		- generator function  
 			이건 나중에 알아보자
 
-	- Function Scope
-		대부분의 프로그래밍 언어는 블록단위의 유효범위를 가짐 => JS는 함수를 블록대신 사용
-		JS 함수는 자신의 정의된 범위 안에서 정의도니 모든 변수/ 함수에 접근
-		함수 안에 정의된 함수의 경우, 부모함수의 변수 및 부모함수가 접근할수 있는 모든 다른 변수에 접근 가능
+	- Function Scope  
+		대부분의 프로그래밍 언어는 블록단위의 유효범위를 가짐 => JS는 함수를 블록대신 사용  
+		JS 함수는 자신의 정의된 범위 안에서 정의도니 모든 변수/ 함수에 접근  
+		함수 안에 정의된 함수의 경우, 부모함수의 변수 및 부모함수가 접근할수 있는 모든 다른 변수에 접근 가능  
 		```
 		// x, y, name을 전역 변수로 선언함.
 		var x = 10, y = 20;
@@ -92,9 +92,9 @@
 		```
 
 		- *__Function Hoisting__*
-			JS 함수의 유효볌위 == 선언된 모든 변수는 함수 전체에 걸쳐 유효
-			이 범위가 변수가 선언되기 전에도 똑같이 적용
-			함수 안에 있는 모든 변수의 선언이 함수의 맨 처음으로 이동된 것처럼 동작
+			JS 함수의 유효볌위 == 선언된 모든 변수는 함수 전체에 걸쳐 유효  
+			이 범위가 변수가 선언되기 전에도 똑같이 적용  
+			함수 안에 있는 모든 변수의 선언이 함수의 맨 처음으로 이동된 것처럼 동작  
 			```
 			var globalNum = 10;     // globalNum을 전역 변수로 선언함.
 
@@ -110,11 +110,11 @@
 
 			printNum();
 			```
-			(1)은 `undefined`, (2)는 `20`
+			(1)은 `undefined`, (2)는 `20`  
 
 
-	- Parameter
-		함수 정의보다 더 적은 매개변수가 전달되면 나머지 매개변수를 undefined로 지정
+	- Parameter  
+		함수 정의보다 더 적은 매개변수가 전달되면 나머지 매개변수를 undefined로 지정  
 		```
 		function addNum(x, y, z) {
 			if(x === undefined) // 함수 호출시 x에 해당하는 인수가 전달되지 않은 경우
@@ -132,8 +132,8 @@
 		addNum();        // 0
 		```
 
-		- argument 객체
-			더 많은 매개변수가 들어왔을 경우
+		- argument 객체  
+			더 많은 매개변수가 들어왔을 경우  
 			```
 			function addNum() {
 				var sum = 0;  // 합을 저장할 변수 sum을 선언함.
@@ -151,12 +151,12 @@
 			addNum(1, 2, 3, 4, 5, 6, 7, 8, 9, 10); // 55
 			```
 
-		- default param, rest param..
+		- default param, rest param..  
 			`function mul(a, b = 1) {...}`
 			`function sub(firstNum, ...restArgs) {...}`
-2. Callback Function
-	JS에서 함수는 `first-class object`, 인자 전달 시 함수를 전달할 수 있음 
-	=> callback은 다른 함수의 인자로 전달되는 함수
+2. Callback Function  
+	JS에서 함수는 `first-class object`, 인자 전달 시 함수를 전달할 수 있음   
+	=> callback은 다른 함수의 인자로 전달되는 함수  
 
 	- synchronous callback
 		```
@@ -191,7 +191,7 @@
 
 	[more practice!](https://www.javascripttutorial.net/javascript-callback/)
 
-3. Prototypal OOP
+3. Prototypal OOP  
 
 
 --- 
