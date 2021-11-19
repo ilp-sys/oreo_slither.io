@@ -1,6 +1,6 @@
 # oreo_slither.io
 
----
+
 
 ### JS Basic
 
@@ -12,10 +12,10 @@
 		- 함수 선언
 		`function` 키워드 사용  
 
-		- 함수 표현식(function expression)
-  		유명함수(named), 익명함수(anonymous) 정의 가능
+		- 함수 표현식(function expression)  
+  		유명함수(named), 익명함수(anonymous) 정의 가능  
 		함수 표현식은 스코프 상단으로 호이스팅 되지 않으므로 코드 내에 나타나기 전에는 사용할 수 없음  
-		함수를 선언하지만 function 키워드가 맨 앞에 오지 않는 것이 함수표현식
+		함수를 선언하지만 function 키워드가 맨 앞에 오지 않는 것이 함수표현식  
 
     		* anonymous function
     			```
